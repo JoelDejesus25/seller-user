@@ -1,0 +1,252 @@
+/* Navbar Styles */
+.navbar {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width to limit stretching on large screens */
+    margin: 0 auto; /* Center the navbar */
+    padding: 10px 20px; /* Padding around navbar */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    height: 60px; /* Fixed height for navbar */
+    background-color: #256f07; /* Background color for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navigation Items */
+.nav-items {
+    display: flex; /* Use flexbox for navigation items */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    align-items: center; /* Center items vertically */
+}
+
+/* Button Styles */
+.nav-items a, .nav-button {
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 10px 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove default border */
+    background: transparent; /* Transparent background */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    display: flex; /* Use flex for centering text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100%; /* Make the button take full height of its parent */
+    font-size: 16px; /* Text size */
+}
+
+.nav-items a:hover, .nav-button:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    font-size: 14px; /* Increased font size for all text */
+}
+
+/* Seller List Container */
+.seller-list-container {
+    max-width: 1000px; /* Maximum width of the table container */
+    margin: auto; /* Center the container */
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px; /* Increased padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: auto; /* Allow automatic width to fit content */
+    min-width: 1160px; /* Set a minimum width to prevent overlapping */
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Increased space below the heading */
+    font-weight: 600; /* Semi-bold for the heading */
+    font-size: 22px; /* Increased heading size */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove space between cells */
+    margin-bottom: 20px; /* Increased space below the table */
+    margin-right: 20px;
+}
+
+th, td {
+    padding: 12px; /* Increased space within each cell */
+    border: 1px solid #ccc; /* Light gray border for cells */
+    text-align: left; /* Left-aligned text */
+    font-size: 14px; /* Increased text size for table cells */
+}
+
+th {
+    background-color: #256f07; /* Orange background for header */
+    color: #ffffff; /* White text for header */
+    font-weight: bold; /* Bold text for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #ffe0b2; /* Light orange background on hover */
+}
+
+/* Image Styles */
+img {
+    max-width: 80px; /* Reduced width for images */
+    max-height: 60px; /* Set a max height */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Additional styling for specific table columns */
+td:nth-child(2) { /* Email */
+    width: 180px; /* Adjusted width for better layout */
+}
+
+td:nth-child(3) { /* Phone */
+    width: 130px; /* Adjusted width for Phone */
+}
+
+td:nth-child(5), /* Business Address */
+td:nth-child(6) { /* Business Description */
+    width: 230px; /* Adjusted width for better layout */
+}
+
+td:nth-child(7) {
+    width: 130px; /* Adjusted width for Valid ID */
+}
+
+/* Ensure proper text wrapping */
+td {
+    word-wrap: break-word; /* Enable wrapping */
+    white-space: normal; /* Allow normal whitespace behavior */
+    overflow-wrap: break-word; /* Ensures long words will break */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    th, td {
+        padding: 8px; /* Reduce padding on smaller screens */
+    }
+
+    /* Adjust form elements for smaller screens */
+    input, select, textarea {
+        width: 100%; /* Full width for inputs */
+    }
+}
+
+/* Additional Form Styles */
+input, select, textarea { /* Apply styles to form elements */
+    width: calc(100% - 24px); /* Full width minus padding and border */
+    padding: 12px; /* Increased padding inside inputs for better spacing */
+    margin-bottom: 16px; /* Increased space below inputs to separate elements */
+    font-size: 14px; /* Increased font size for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and borders are included in total width/height */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Specific styling for textarea to prevent overlap */
+textarea {
+    min-height: 120px; /* Set a minimum height for text areas */
+    width: calc(100% - 24px); /* Ensure text area takes full width */
+}
+
+/* General styling for the action buttons container */
+.action-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Increased space between buttons */
+}
+
+/* Specific button styles */
+.action-buttons button {
+    padding: 8px 12px; /* Increased padding inside buttons */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Accept button styles */
+.action-buttons .accept-button {
+    background-color: #4CAF50; /* Green background for Accept button */
+}
+
+/* Reject button styles */
+.action-buttons .reject-button {
+    background-color: #f44336; /* Red background for Reject button */
+}
+
+/* Button hover effects */
+.action-buttons button:hover {
+    opacity: 0.9; /* Slightly fade on hover */
+}
+
+/* Overview Section Styles */
+.overview {
+    padding: 20px; /* Padding inside the overview box */
+    background-color: #ffffff; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the overview box */
+}
+
+/* Overview Title Style */
+.overview h3 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: 600; /* Semi-bold for the title */
+    font-size: 20px; /* Adjusted size for title */
+    color: #333; /* Dark color for title text */
+}
+
+/* Stats Container */
+.stats {
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between stat boxes */
+}
+
+/* Individual Stat Box */
+.stat {
+    flex: 1; /* Equal width for each stat box */
+    padding: 15px; /* Padding inside stat boxes */
+    background-color: #f9f9f9; /* Light gray background for stat boxes */
+    border: 1px solid #ddd; /* Border for stat boxes */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text in stat boxes */
+}
+
+/* Stat Title Styles */
+.stat h4 {
+    margin: 0; /* Remove margin */
+    font-size: 18px; /* Title size */
+}
+
+/* Stat Value Styles */
+.stat p {
+    font-size: 24px; /* Increased size for values */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+
+/*view seller */
+/* General styles */
+/* General styles */
